@@ -36,6 +36,9 @@ const CoffeeMain: Component = () => {
 
   let ticks = 0
 
+  // const defaultInterval = 230
+  const interval = 90
+
   // shell text interval
   setInterval(() => {
     // pause for some ticks once we've reached max or min len
@@ -84,7 +87,7 @@ const CoffeeMain: Component = () => {
         }
       }
     }
-  }, 230)
+  }, interval)
 
 
 
@@ -93,14 +96,31 @@ const CoffeeMain: Component = () => {
   return (
     <div class={tw.containerSty}>
 
-      <p class={tw.matrixSty}>
+      <div class={tw.matrixSty + " headline"}>
         <img src={'../static/coffee.svg'} class="coffeeimg"></img> 
+
+        {/* 
+          out-of-order wonkery for these next few
+          elements is hacks to keep the headline()
+          string resizing from pulling / pushing
+          the other elems around
+
+          this was just the first way I figured out;
+          probably not ideal
+        */}
+
+        <NetworkStatic />
+        
+        <div class={"networkstatic" + " transmissionPadding"}>
+            <p class={tw.matrixSty}> network static may interfere with our transmissions</p>
+        </div>
+
+
         $ {headline()} <CursorPipe />
-      </p>
+
+      </div>
 
 
-    <NetworkStatic />
-      <p class={tw.matrixSty}> network static may interfere with our transmissions</p>
     </div>
   )
 }

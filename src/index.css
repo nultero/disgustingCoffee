@@ -22,6 +22,19 @@ https://codepen.io/sosuke/pen/Pjoqqp
     color: #93e7e2;
 }
 
+.headline {
+    position: relative;
+}
+
+.networkstatic {
+    position: absolute;
+    margin-top: 1.3rem;
+}
+
+.transmissionPadding {
+    margin-top: 7rem;
+}
+
 .coffeeimg {
     height: 4rem;
     width: 4rem;

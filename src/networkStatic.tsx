@@ -39,7 +39,7 @@ const NetworkStatic: Component = () => {
     }, 340)
 
     return (    
-          <p class={tw.matrixSty}>{txt()}</p>
+          <p class={tw.matrixSty + " networkstatic"}>{txt()}</p>
       )
 }
 
