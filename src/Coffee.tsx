@@ -1,9 +1,9 @@
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 
-import texts from './texts';
+import { news } from './texts';
 import tw from './tailwinds';
-import { NetworkStatic, rand } from './networkStatic';
+import { NetworkStatic } from './networkStatic';
 
 const CursorPipe: Component = () => {
   const p = "|"
@@ -24,27 +24,24 @@ const CursorPipe: Component = () => {
 
 
 const CoffeeMain: Component = () => {
-
-  let idx = 0;
   let strBuf: string = ""
   let strIdx = 0
+  let newsObj = new news()
 
-  const [headline, setheadline] = createSignal(texts.headlines[idx]);
+  const [headline, setheadline] = createSignal(newsObj.first());
 
   // get forward/back typing: 1 is forward, 0 back
   const [getfw, setfw] = createSignal(0);
 
-  let ticks = 0
-
-  // const defaultInterval = 230
-  const interval = 90
+  let ticks = 0 // delay counter
+  const interval = 45
 
   // shell text interval
   setInterval(() => {
     // pause for some ticks once we've reached max or min len
     if (ticks != 0) {
       ticks++
-      if (ticks >= 9) {
+      if (ticks >= 1.67 * interval) {
         ticks = 0
       }
 
@@ -52,16 +49,9 @@ const CoffeeMain: Component = () => {
 
       let len = headline().length
       // reset to new string if len is nil
-
       if (len == 0 && ticks == 0) {
         ticks++
-        let i = idx
-        let hl = texts.headlines.length
-        while (i == idx) {
-          idx = rand(hl)-1
-        }
-        // set the next string to 'forward' into
-        strBuf = texts.headlines[idx]
+        strBuf = newsObj.next()
         setfw(1)
       } 
 
@@ -97,7 +87,9 @@ const CoffeeMain: Component = () => {
     <div class={tw.containerSty}>
 
       <div class={tw.matrixSty + " headline"}>
-        <img src={'../static/coffee.svg'} class="coffeeimg"></img> 
+        { ` news from the liminal terminal ` }
+        {/* <img url={'../static/coffee.svg'} class="coffeeimg"></img>  */}
+        <img src={"/assets/coffee.svg"} class="coffeeimg"></img> 
 
         {/* 
           out-of-order wonkery for these next few

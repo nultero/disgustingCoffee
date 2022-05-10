@@ -1,7 +1,7 @@
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 
-import texts from './texts';
+import  { staticSignal } from './texts';
 import tw from './tailwinds';
 
 function rand(i: number) : number {
@@ -9,10 +9,11 @@ function rand(i: number) : number {
 }
 
 const NetworkStatic: Component = () => {
+    const ss = staticSignal
 
     let randBlocks: Function = () => {
         let s: string = ""
-        let len = texts.blocks.length
+        let len = ss.blocks.length
         for (let i = 0; i < len; i++) {
           s += randblt()
         }
@@ -22,7 +23,7 @@ const NetworkStatic: Component = () => {
     const [txt, setTxt] = createSignal(randBlocks());
     
       function randblt(): string {
-        return texts.blocks[rand(texts.blocks.length-1)]
+        return ss.blocks[rand(ss.blocks.length-1)]
       }
 
     function elideBlock(s: string) : string {
