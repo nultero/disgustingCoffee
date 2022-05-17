@@ -5,12 +5,14 @@
 @font-face {
     font-family: "Orbitron";
     src: url('../assets/fonts/static/Orbitron-Regular.ttf');
+    font-family: "NewsTerminal";
+    src: url('../assets/fonts/static/Righteous-Regular.ttf');
 }
 
 :root {
     /* background-color: #071213; also great shade */
     background-color: #050d0e;
-    font-family: "Orbitron";
+    font-family: "NewsTerminal";
 }
 
 /*

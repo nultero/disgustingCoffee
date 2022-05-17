@@ -24,8 +24,11 @@ const CursorPipe: Component = () => {
 
 
 const CoffeeMain: Component = () => {
-  let strBuf: string = ""
+
+  // for storing whole string for piecemeal buildup, not for current state
+  let strBuf: string = "" 
   let strIdx = 0
+
   let newsObj = new news()
 
   const [headline, setheadline] = createSignal(newsObj.first());
@@ -33,7 +36,7 @@ const CoffeeMain: Component = () => {
   // get forward/back typing: 1 is forward, 0 back
   const [getfw, setfw] = createSignal(0);
 
-  let ticks = 0 // delay counter
+  let ticks = 0 // delay counter for when between "typing" and full strings
   const interval = 45
 
   // shell text interval
