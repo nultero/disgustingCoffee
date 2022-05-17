@@ -1,8 +1,8 @@
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 
-import { news } from './texts';
-import tw from './tailwinds';
+import { news } from './news';
+import styles from './styles';
 import { NetworkStatic } from './networkStatic';
 
 const CursorPipe: Component = () => {
@@ -87,12 +87,12 @@ const CoffeeMain: Component = () => {
 
   // TODOO make the msg staticky
   return (
-    <div class={tw.containerSty}>
+    <div class={styles.container}>
 
-      <div class={tw.matrixSty + " headline"}>
+      <div class={styles.crystal + styles.headline}>
         { ` news from the liminal terminal ` }
         {/* <img url={'../static/coffee.svg'} class="coffeeimg"></img>  */}
-        <img src={"/assets/coffee.svg"} class="coffeeimg"></img> 
+        <img class="coffeeimg"></img> 
 
         {/* 
           out-of-order wonkery for these next few
@@ -106,8 +106,8 @@ const CoffeeMain: Component = () => {
 
         <NetworkStatic />
         
-        <div class={"networkstatic" + " transmissionPadding"}>
-            <p class={tw.matrixSty}> network static may interfere with our transmissions</p>
+        <div class={styles.networkStatic + styles.transmissionPad}>
+            <p class={styles.headline}> network static may interfere with our transmissions</p>
         </div>
 
 

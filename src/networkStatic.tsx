@@ -1,8 +1,8 @@
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 
-import  { staticSignal } from './texts';
-import tw from './tailwinds';
+import  { staticSignal } from './news';
+import styles from './styles';
 
 function rand(i: number) : number {
   return Math.round(Math.random() * i) 
@@ -40,7 +40,7 @@ const NetworkStatic: Component = () => {
     }, 340)
 
     return (    
-          <p class={tw.matrixSty + " networkstatic"}>{txt()}</p>
+          <p class={styles.crystal + styles.networkStatic}>{txt()}</p>
       )
 }
 

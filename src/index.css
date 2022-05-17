@@ -4,9 +4,9 @@
 
 @font-face {
     font-family: "Orbitron";
-    src: url('../assets/fonts/static/Orbitron-Regular.ttf');
+    src: url('./assets/Orbitron-Regular.ttf');
     font-family: "NewsTerminal";
-    src: url('../assets/fonts/static/Righteous-Regular.ttf');
+    src: url('./assets/fonts/static/Righteous-Regular.ttf');
 }
 
 :root {
@@ -33,12 +33,13 @@ https://codepen.io/sosuke/pen/Pjoqqp
 }
 
 .transmissionPadding {
-    margin-top: 12rem;
+    margin-top: 14rem;
 }
 
 .coffeeimg {
     height: 4rem;
     width: 4rem;
+    content: url('./assets/coffee.svg');
 
     /* previous hacker green
     filter: invert(52%) sepia(91%) saturate(349%) hue-rotate(90deg) brightness(97%) contrast(106%);
