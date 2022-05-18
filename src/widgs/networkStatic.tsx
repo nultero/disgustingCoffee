@@ -1,7 +1,6 @@
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
-
-import  { staticSignal } from './news';
+import { signal } from './signals'
 
 import fmt from '../styles/fmt';
 import colors from '../styles/colors';
@@ -11,8 +10,9 @@ function rand(i: number) : number {
   return Math.round(Math.random() * i) 
 }
 
-const NetworkStatic: Component = () => {
-    const ss = staticSignal
+/// Signal passed in as parameters determines blocks
+/// that pass in the channel.
+const NetworkStatic: Function = (ss: signal) => {
 
     let randBlocks: Function = () => {
         let s: string = ""

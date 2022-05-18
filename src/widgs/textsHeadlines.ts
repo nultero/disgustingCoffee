@@ -18,7 +18,7 @@ const headlines: string[] = [
     "Uranian Parliament collapses under weight of new advertising holodeck",
     "rustacean crypto-syndicate moves into Uranian cryodome, pissing off real estate moguls",
     "ancient Fortran programmer discovered on Earth, confirmed older than dirt",
-    "mainframes miraculously turned to physical trees in ruins of USA, programmers puzzled by 'nature'",
+    "mainframes turned to physical trees over 50 years in ruins of USA, programologists puzzled by 'nature'",
     "mutant Zig programmer suspected of snarfing entire chocobar supply on outpost becomes drone messiah",
     "local human uprising on Cephalon V upsets robo-overlords; expect fewer rations",
     "renegade cows overrun rogue state of Texas, grab guns, return fire to martial autodrones",

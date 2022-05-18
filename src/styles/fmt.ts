@@ -5,7 +5,14 @@ class fmt {
     static headline: string = " headline "
     static transmissionPad: string = " transmissionPadding "
     static tinypad: string = " tinypad "
-    static dialogueBox: string = " dialogueBox "
+    static greenDialogueBox: string = " greenDialBox "
+    static blueDialogueBox: string = " blueDialBox "
+    static cyberDialogueBox: string = " cyberphaseDialBox "
+    
+    static margTop: string = " topMarg "
+
+    static margxLeft: string = " margxLeft "
+    static margtwRight: string = " margintowardsRight "
 }
 
 export default fmt;

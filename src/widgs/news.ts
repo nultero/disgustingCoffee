@@ -67,13 +67,4 @@ class News {
     
 }
 
-class staticSignal {
-    blocks: string[]
-    static blocks = [
-        "▀", "▁", "▂", "▃", "▄", "▅", "▆", "▇", "█", "▉", "▊", "▋", "▌", "▍", "▎", "▏",
-        "▐", "░", "▒", "▓", "▔", "▕", "▖", "▗", "▘", "▙", "▚", "▛", "▜", "▝", "▞", "▟",
-    ]
-}
-
-
-export {News, staticSignal};
+export {News};

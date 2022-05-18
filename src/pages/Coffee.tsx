@@ -5,6 +5,7 @@ import { News } from '../widgs/news';
 import fmt from '../styles/fmt';
 import colors from '../styles/colors';
 import { NetworkStatic } from '../widgs/networkStatic';
+import { staticSignal } from '../widgs/signals';
 import { Link } from 'solid-app-router';
 
 const CursorPipe: Component = () => {
@@ -109,7 +110,7 @@ const CoffeeMain: Component = () => {
           probably not ideal
         */}
 
-        <NetworkStatic />
+        { NetworkStatic(staticSignal) }
         
         <div class={fmt.networkStatic + fmt.transmissionPad}>
             <p class={fmt.headline}>

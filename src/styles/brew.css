@@ -1,0 +1,17 @@
+.convoimg {
+    height: 22rem;
+    width: 47rem;
+    content: url('../assets/convo.svg');
+    filter: invert(93%) sepia(70%) saturate(1592%) hue-rotate(116deg) brightness(50%) contrast(99%);
+}
+
+.nicecupimg {
+    height: 22rem;
+    width: 40rem;
+    background-color: rgb(253, 253, 255);
+    margin: 5px;
+    border: 1px solid rgb(241, 80, 0);
+    box-shadow: 2px 2px 2px 0px rgb(166, 25, 236);
+    content: url('../assets/nicecup.svg');
+    filter: invert(93%) sepia(10%) saturate(4592%) hue-rotate(70deg) brightness(112%) contrast(99%);
+}
