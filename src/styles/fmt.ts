@@ -1,9 +1,11 @@
-class styles {
+class fmt {
     static container: string = "container mx-auto "
-    static crystal: string = " text-2xl crystal text-left py-20 "
+    static stdDisplayTxt: string = " text-2xl  text-left py-20 "
     static networkStatic: string = " networkstatic "
     static headline: string = " headline "
     static transmissionPad: string = " transmissionPadding "
+    static tinypad: string = " tinypad "
+    static dialogueBox: string = " dialogueBox "
 }
 
-export default styles;
+export default fmt;

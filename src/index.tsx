@@ -1,7 +1,14 @@
 /* @refresh reload */
 import './index.css';
 import { render } from 'solid-js/web';
+import { Router } from "solid-app-router";
 
-import CoffeeMain from './Coffee';
+import Dir from './dir'
 
-render(() => <CoffeeMain />, document.getElementById('root') as HTMLElement);
+render(
+    () =>
+    <Router base="/">
+        <Dir />
+    </Router>,
+    document.getElementById('root') as HTMLElement
+);

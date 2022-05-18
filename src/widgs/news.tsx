@@ -2,7 +2,7 @@ import headlines from "./textsHeadlines"
 
 import { rand } from "./networkStatic"
 
-class news {
+class News {
     // map for keeping msg repetition to a minumum
     // k: headline, v: times seen
     private hlm: Map<string, number>
@@ -76,4 +76,4 @@ class staticSignal {
 }
 
 
-export {news, staticSignal};
+export {News, staticSignal};

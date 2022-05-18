@@ -2,7 +2,10 @@ import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 
 import  { staticSignal } from './news';
-import styles from './styles';
+
+import fmt from '../styles/fmt';
+import colors from '../styles/colors';
+
 
 function rand(i: number) : number {
   return Math.round(Math.random() * i) 
@@ -40,7 +43,7 @@ const NetworkStatic: Component = () => {
     }, 340)
 
     return (    
-          <p class={styles.crystal + styles.networkStatic}>{txt()}</p>
+          <p class={colors.crystal + fmt.networkStatic}>{txt()}</p>
       )
 }
 

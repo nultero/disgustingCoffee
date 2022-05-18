@@ -1,9 +1,11 @@
 import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 
-import { news } from './news';
-import styles from './styles';
-import { NetworkStatic } from './networkStatic';
+import { News } from '../widgs/news';
+import fmt from '../styles/fmt';
+import colors from '../styles/colors';
+import { NetworkStatic } from '../widgs/networkStatic';
+import { Link } from 'solid-app-router';
 
 const CursorPipe: Component = () => {
   const p = "|"
@@ -29,7 +31,7 @@ const CoffeeMain: Component = () => {
   let strBuf: string = "" 
   let strIdx = 0
 
-  let newsObj = new news()
+  let newsObj = new News()
 
   const [headline, setheadline] = createSignal(newsObj.first());
 
@@ -87,10 +89,13 @@ const CoffeeMain: Component = () => {
 
   // TODOO make the msg staticky
   return (
-    <div class={styles.container}>
+    <div class={fmt.container}>
 
-      <div class={styles.crystal + styles.headline}>
+      <div class={fmt.headline + fmt.stdDisplayTxt + colors.crystal}>
+        <div>
         { ` news from the liminal terminal ` }
+
+        </div>
         {/* <img url={'../static/coffee.svg'} class="coffeeimg"></img>  */}
         <img class="coffeeimg"></img> 
 
@@ -99,17 +104,24 @@ const CoffeeMain: Component = () => {
           elements is hacks to keep the headline()
           string resizing from pulling / pushing
           the other elems around
-
+          
           this was just the first way I figured out;
           probably not ideal
         */}
 
         <NetworkStatic />
         
-        <div class={styles.networkStatic + styles.transmissionPad}>
-            <p class={styles.headline}> network static may interfere with our transmissions</p>
+        <div class={fmt.networkStatic + fmt.transmissionPad}>
+            <p class={fmt.headline}>
+              <Link 
+                class={colors.deepgold}
+                href={"/channels"}
+              >
+                {` tune in `}
+              </Link>
+               for more transmissions
+            </p>
         </div>
-
 
         $ {headline()} <CursorPipe />
 
