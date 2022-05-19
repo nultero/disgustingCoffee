@@ -3,6 +3,7 @@ class colors {
     static cybermagenta: string = " cybermagenta "
     static deepgold: string = " deepgold "
     static minimalGray: string = " minimalGray "
+    static burningRed: string = " bRed "
 }
 
 export default colors

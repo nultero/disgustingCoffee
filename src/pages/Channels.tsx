@@ -9,6 +9,7 @@ import { links } from '../../links';
 import { ParaBreak } from '../widgs/parabreak';
 import { NetworkStatic } from '../widgs/networkStatic'
 import { flimsySignal } from '../widgs/signals'
+import { PageEnd } from '../widgs/pageEnd';
 
 
 const Channels: Component = () => {
@@ -67,6 +68,8 @@ const Channels: Component = () => {
         {green(
             "lmao get rekt scrub"
         )}
+
+        <PageEnd/>
 
     </div>
   )

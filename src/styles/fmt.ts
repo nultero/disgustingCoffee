@@ -8,8 +8,10 @@ class fmt {
     static greenDialogueBox: string = " greenDialBox "
     static blueDialogueBox: string = " blueDialBox "
     static cyberDialogueBox: string = " cyberphaseDialBox "
+    static redDialogueBox: string = " redDialBox "
     
     static margTop: string = " topMarg "
+    static margBot: string = " botMarg "
 
     static margxLeft: string = " margxLeft "
     static margtwRight: string = " margintowardsRight "

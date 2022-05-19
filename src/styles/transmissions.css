@@ -1,0 +1,6 @@
+.fishhorrorimg {
+    height: 22rem;
+    width: 22rem;
+    content: url('../assets/youcantbelievethehorrors.svg');
+    filter: invert(50%) sepia(100%) saturate(5592%) hue-rotate(330deg) brightness(91%) contrast(99%);
+}

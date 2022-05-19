@@ -5,6 +5,7 @@ import { ParaBreak } from '../../widgs/parabreak';
 import colors from '../../styles/colors';
 import '../../styles/brew.css'
 import { Link } from 'solid-app-router';
+import { PageEnd } from '../../widgs/pageEnd';
 
 
 const Brew: Component = () => {
@@ -93,6 +94,8 @@ const Brew: Component = () => {
             "That's what 'bad coffee' means: unpalatable rubbish."
         )}
 
+
+        <PageEnd/>
 
     </div>
   )

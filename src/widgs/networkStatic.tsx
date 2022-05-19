@@ -1,4 +1,3 @@
-import type { Component } from 'solid-js';
 import { createSignal } from 'solid-js';
 import { signal } from './signals'
 

@@ -126,13 +126,14 @@ const CoffeeMain: Component = () => {
             <hr class={colors.minimalGray}></hr>
 
             <p class={fmt.headline}>
-              dial in for
+              dial in on
               <Link 
                 class={colors.deepgold}
                 href={"/radio"}
               >
-                {` more caffeine radio `}
+                {` reality radio `}
               </Link>
+              (more serious)
             </p>
         </div>
 

@@ -23,6 +23,10 @@ https://codepen.io/sosuke/pen/Pjoqqp
     margin-top: 3rem;
 }
 
+.botMarg {
+    margin-bottom: 3rem;
+}
+
 .crystal {
     color: #93e7e2;
 }
@@ -33,6 +37,10 @@ https://codepen.io/sosuke/pen/Pjoqqp
 
 .deepgold {
     color: #d3ac00;
+}
+
+.bRed {
+    color: #d30062;
 }
 
 .minimalGray {
@@ -55,6 +63,10 @@ https://codepen.io/sosuke/pen/Pjoqqp
 
 .transmissionPadding {
     margin-top: 18rem;
+}
+
+.pageEnd {
+    margin: 10rem;
 }
 
 /*
