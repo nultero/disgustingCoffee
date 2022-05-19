@@ -35,6 +35,10 @@ https://codepen.io/sosuke/pen/Pjoqqp
     color: #d3ac00;
 }
 
+.minimalGray {
+    color: #5a5a5a;
+}
+
 .tinypad {
     margin: 10rem;
     /* padding: 10rem; */
@@ -50,7 +54,7 @@ https://codepen.io/sosuke/pen/Pjoqqp
 }
 
 .transmissionPadding {
-    margin-top: 14rem;
+    margin-top: 18rem;
 }
 
 /*

@@ -7,7 +7,7 @@ import '../styles/brew.css'
 import { Link } from 'solid-app-router';
 
 
-const Brew: Component = () => {
+const Radio: Component = () => {
 
     const blue = (s: string) => {
         return (
@@ -98,4 +98,4 @@ const Brew: Component = () => {
   )
 }
 
-export default Brew
+export default Radio

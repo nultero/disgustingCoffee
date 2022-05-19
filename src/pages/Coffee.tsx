@@ -97,7 +97,7 @@ const CoffeeMain: Component = () => {
         { ` news from the liminal terminal ` }
 
         </div>
-        {/* <img url={'../static/coffee.svg'} class="coffeeimg"></img>  */}
+
         <img class="coffeeimg"></img> 
 
         {/* 
@@ -116,11 +116,23 @@ const CoffeeMain: Component = () => {
             <p class={fmt.headline}>
               <Link 
                 class={colors.deepgold}
-                href={"/channels"}
+                href={"/transmissions"}
               >
                 {` tune in `}
               </Link>
                for more transmissions
+            </p>
+
+            <hr class={colors.minimalGray}></hr>
+
+            <p class={fmt.headline}>
+              dial in for
+              <Link 
+                class={colors.deepgold}
+                href={"/radio"}
+              >
+                {` more caffeine radio `}
+              </Link>
             </p>
         </div>
 

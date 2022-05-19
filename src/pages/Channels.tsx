@@ -4,6 +4,7 @@ import '../styles/dialogues.css'
 import fmt from '../styles/fmt';
 import colors from '../styles/colors';
 import { Link } from 'solid-app-router';
+import { links } from '../../links';
 
 import { ParaBreak } from '../widgs/parabreak';
 import { NetworkStatic } from '../widgs/networkStatic'
@@ -19,7 +20,7 @@ const Channels: Component = () => {
     }
     const green = (s: string) => {
         return (
-            <p class={fmt.greenDialogueBox}>{s}</p>
+            <p class={fmt.greenDialogueBox + fmt.margtwRight}>{s}</p>
         )
     }
 
@@ -41,7 +42,7 @@ const Channels: Component = () => {
             Don't mind if I do! Nothing like a 
                 <Link 
                 class={colors.deepgold}
-                href='brew'>
+                href={links.transmissions.brew}>
                     morning brew...
                 </Link>
         </p>
