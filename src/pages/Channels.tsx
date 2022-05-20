@@ -4,7 +4,7 @@ import '../styles/dialogues.css'
 import fmt from '../styles/fmt';
 import colors from '../styles/colors';
 import { Link } from 'solid-app-router';
-import { links } from '../../links';
+import { links } from '../links';
 
 import { ParaBreak } from '../widgs/parabreak';
 import { NetworkStatic } from '../widgs/networkStatic'

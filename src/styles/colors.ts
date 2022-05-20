@@ -4,6 +4,8 @@ class colors {
     static deepgold: string = " deepgold "
     static minimalGray: string = " minimalGray "
     static burningRed: string = " bRed "
+    static grayBg = " bg "
+    static lightGray = " lgry "
 }
 
 export default colors

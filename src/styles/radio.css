@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Droid";
+    src: url('../assets/fonts/static/Droid.otf');
+}
+
+.titlebar {
+    font-size: x-large
+}
+
+.subhead {
+    font-size: larger;
+}
+
+.lightweight {
+    font-size: medium;
+    font-family: "Droid";
+}
+
+.pighouseimg {
+    height: 10rem;
+    width: 10rem;
+    content: url('../assets/pighouse.svg');
+    filter: invert(93%) sepia(2%) saturate(0%) hue-rotate(116deg) brightness(91%) contrast(99%);
+}

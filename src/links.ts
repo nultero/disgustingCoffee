@@ -6,9 +6,15 @@ class transmissions {
     static terribleCaffeine = transmissions.badCaffeine + "/terribleCaffeine"
 }
 
+class radio {
+    static base = "/radio"
+    static blog = radio.base + "/blog"
+    static houses = radio.blog + "/houses-that-are-cpus"
+}
+
 class links {
     static transmissions = transmissions
-    static radio = "/radio"
+    static radio = radio
 }
 
 export {

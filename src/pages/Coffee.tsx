@@ -7,6 +7,8 @@ import colors from '../styles/colors';
 import { NetworkStatic } from '../widgs/networkStatic';
 import { staticSignal } from '../widgs/signals';
 import { Link } from 'solid-app-router';
+import { links } from '../links';
+import '../index.css'
 
 const CursorPipe: Component = () => {
   const p = "|"
@@ -94,7 +96,14 @@ const CoffeeMain: Component = () => {
 
       <div class={fmt.headline + fmt.stdDisplayTxt + colors.crystal}>
         <div>
-        { ` news from the liminal terminal ` }
+        { 
+          ` news from the liminal terminal` + 
+          ` - circa ${
+              Math.round(
+                Math.random() * 10
+              ) + 2230
+          }`
+        }
 
         </div>
 
@@ -116,7 +125,7 @@ const CoffeeMain: Component = () => {
             <p class={fmt.headline}>
               <Link 
                 class={colors.deepgold}
-                href={"/transmissions"}
+                href={links.transmissions.base}
               >
                 {` tune in `}
               </Link>
@@ -129,7 +138,7 @@ const CoffeeMain: Component = () => {
               dial in on
               <Link 
                 class={colors.deepgold}
-                href={"/radio"}
+                href={links.radio.base}
               >
                 {` reality radio `}
               </Link>

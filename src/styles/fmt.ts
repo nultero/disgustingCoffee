@@ -1,3 +1,9 @@
+class blog {
+    static titlebar = " titlebar "
+    static subhead = " subhead "
+    static lightweight = " lightweight w-1/3 "
+}
+
 class fmt {
     static container: string = "container mx-auto "
     static stdDisplayTxt: string = " text-2xl  text-left py-20 "
@@ -11,10 +17,13 @@ class fmt {
     static redDialogueBox: string = " redDialBox "
     
     static margTop: string = " topMarg "
+    static margTopX: string = " topMargX "
     static margBot: string = " botMarg "
 
     static margxLeft: string = " margxLeft "
     static margtwRight: string = " margintowardsRight "
+
+    static blog = blog
 }
 
 export default fmt;

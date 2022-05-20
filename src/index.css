@@ -23,6 +23,10 @@ https://codepen.io/sosuke/pen/Pjoqqp
     margin-top: 3rem;
 }
 
+.topMargX {
+    margin-top: 7rem;
+}
+
 .botMarg {
     margin-bottom: 3rem;
 }
@@ -45,6 +49,10 @@ https://codepen.io/sosuke/pen/Pjoqqp
 
 .minimalGray {
     color: #5a5a5a;
+}
+
+.lgry {
+    color: lightgray;
 }
 
 .tinypad {
